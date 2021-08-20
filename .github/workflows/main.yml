@@ -51,7 +51,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ${{ github.actor }}/mirror-to-gitea
+          images: ghcr.io/${{ github.actor }}/mirror-to-gitea
           tags: |
             type=ref,event=branch
             type=ref,event=pr
